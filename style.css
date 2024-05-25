@@ -1,0 +1,156 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+  }
+  section{
+    padding:100px;
+  }
+  .banner{
+    position: relative;
+    min-height:100vh;
+    background-image:url(https://image.freepik.com/free-photo/copy-space-office-black-table-with-laptop-notebook-pencil-coffee-cup-with-plat_35674-1635.jpg);
+    background-size :cover;
+    background-position :right; 
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .banner h2{
+    font-size:3em;
+    color:#fff;
+    font-weight:500;
+    }
+  .banner h2 span{
+    font-size:1.5;
+     font-weight:700;
+      }
+  .banner h3{
+    font-size:1.5em;
+    color:#fff;
+    font-weight:500;
+      }
+  .btn{
+    position:relative;
+    background: #D5DCEE ;
+    display:inline-block;
+    color:black;
+    margin-top:20px;
+    padding:10px 30px;
+    font-size:18px;
+    text-transform:uppercase;
+    text-decoration:none;
+    letter-spacing:2px;
+    font-weight:500;
+  }
+  header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:40px 100px;
+    z-index:1000; /*brings above background*/
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    transition:0.5s;
+  }
+  header.sticky{
+    background:#fff;
+    padding:20px 100px;
+    box-shadow:0px 5px 20px rgba(0,0,0,0.1)
+  }
+  ul{
+    float: right;
+    list-style-type:none;
+    
+  }
+  ul li{
+    display: inline-block; /* top right straight arrangement*/
+    margin-top: 1px;  /*25 pixel space from top*/
+  }
+  ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    border: 1px solid transparent; 
+    transition: 0.8s ease; /*smooth hover transition*/
+  }
+  
+  /*hover effect is change in color when mouse points*/
+  ul li a:hover {
+    background-color:white;
+    color:black;
+  }
+  
+  .main{
+    max-width: 1200px;
+    margin:auto;           /*gives equal space from left and rightside */
+  }
+  ul li.active a{
+    background-color:white;
+    color:black;
+  }
+  
+  
+  header .logo{
+    color:white;
+    font-size:24px;
+    font-weight:700;
+    letter-spacing:2px;
+  }
+  header.sticky .logo{
+    color:#fff;
+  }
+  header.sticky ul li a{
+    text-decoration: none;
+    padding: 5px 20px;
+    border: 1px solid transparent; 
+    transition: 0.8s ease; /*smooth hover transition*/
+    background-color:white;
+    color:#111;
+    /*when scrolled black when on upper white box*/
+  }
+  header.sticky ul li a:hover {
+    background-color:black;
+    color:white;
+  }
+  
+  /*hover effect for upper white border*/
+  
+  .heading{
+    width:100%;
+    text-align: center;
+    margin-bottom:30px; /*30px below about*/
+    color:white;
+    }
+  .heading h2{
+    font-weight:700;
+    font-size:30px;
+  }
+  .content{
+    display:flex;
+    justify-content:space-between;
+    }
+  .contentbx h3 {
+    
+    font-size:24px;
+    margin-bottom:10px;
+  }
+  .contentbx {
+    font-size:20px;
+    padding-right:30px;
+  }
+  
+  .about{
+    background-image: linear-gradient(to bottom ,black , #4d4d4d);
+    /*adds gradient background color*/
+    color:white;
+  }
+  .w50{
+    min-width:50%;
+    }
+  img{
+    max-width:100%;
+  }
